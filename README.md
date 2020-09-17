@@ -1,55 +1,65 @@
-# project-pw
+# Apache Spark Streaming, Apache Nifi and Apache Kafka 
 
-PS1=‘%n %1~ $’ 
+$tree
 
-curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-sudo installer -pkg AWSCLIV2.pkg -target /
-
-nano ~/.aws/credentials
-
-1. use CTRL + Shift + 6 to mark the beginning of your block.
-2. move cursor with arrow keys to end of your block, the text will be highlighted.
-3. use CTRL + K to cut/delete block.
-
-aws s3 ls
-
-cd Desktop/Projekt
-mkdir raw_data
-aws s3 sync s3://deutsche-boerse-xetra-pds/2020-05-25 raw_data/2020-05-25 --no-sign-request
-aws s3 sync s3://deutsche-boerse-xetra-pds/2020-05-26 raw_data/2020-05-26 --no-sign-request 
-aws s3 sync s3://deutsche-boerse-xetra-pds/2020-05-27 raw_data/2020-05-27 --no-sign-request
-
-aws s3api create-bucket --bucket pnowicki-xetra-data --region us-east-1
-
-aws s3 sync raw_data/2020-05-27 s3://pnowicki-xetra-data/2020-05-27
-aws s3 sync raw_data/2020-05-26 s3://pnowicki-xetra-data/2020-05-26
-aws s3 sync raw_data/2020-05-25 s3://pnowicki-xetra-data/2020-05-25
-
-DOCKER: 
-docker ps 
-docker-compose -f nifi-kafka-cluster-pyspark.yml up
-docker exec -it projekt_kafka-1_1 bin/bash 
-
-KAFKA:
-docker exec -it projekt_kafka-1_1 bin/bash 
-kafka-topics --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --list
-kafka-topics --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --create --topic CommonStocks --partitions 3 --replication-factor 3
-kafka-topics --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --create --topic ETF --partitions 2 --replication-factor 3
-kafka-topics --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --create --topic ETC --partitions 2 --replication-factor 2
-kafka-topics --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --create --topic ETN  
-kafka-topics --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --topic CommonStocks,ETF,ETN,ETC --describe
-kafka-topics --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --delete --topic CommonStocks,ETF,ETN,ETC  
-
-kafka-console-producer --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --topic a
-kafka-console-consumer --bootstrap-server kafka-1:19091,kafka-2:29091,kafka-3:39091 --topic a
-
-JUPYTER:
-docker cp projekt_pyspark-notebook_1:/home/jovyan  project-kafka-streamming   
-docker cp  project-kafka-streamming projekt_pyspark-notebook_1:/home/jovyan 
-
-
-docker exec -u 0 -it 1efb572aa0c9 bash
-apt-get update
-apt-get install -y package-bar
-
-
+.
+├── Projekt_koncowy_Patryk_Nowicki.pdf
+├── aws
+│   └── xetra-proj-keypair.pem
+├── docker_compose
+│   ├── final
+│   │   ├── nifi-kafka-cluster-pyspark-copy.yml
+│   │   └── nifi-kafka-cluster-pyspark.yml
+│   └── supporing
+│       ├── kafka-cluster.yml
+│       ├── kafka-single-node.yml
+│       ├── kafka-single-pyspark.yml
+│       └── nifi-kafka-single-pyspark.yml
+├── jupyter
+│   ├── project-kafka-streamming.ipynb
+│   ├── project-kafka-structured-streaming.ipynb
+│   └── work
+│       └── outputs
+│           └── CommonStocks
+│               ├── cumulated-traded-volume-1591371900000
+│               │   ├── _SUCCESS
+│               │   └── part-00000
+│               ├── cumulated-traded-volume-1591372200000
+│               │   ├── _SUCCESS
+│               │   └── part-00000
+│               ├── cumulated-traded-volume-1591372500000
+│               │   ├── _SUCCESS
+│               │   └── part-00000
+│               ├── cumulated-traded-volume-1591372800000
+│               │   ├── _SUCCESS
+│               │   └── part-00000
+│               ├── cumulated-traded-volume-1591373100000
+│               │   ├── _SUCCESS
+│               │   └── part-00000
+│               ├── cumulated-traded-volume-1591373400000
+│               │   ├── _SUCCESS
+│               │   └── part-00000
+│               └── cumulated-traded-volume-1591373700000
+│                   ├── _SUCCESS
+│                   └── part-00000
+├── nifi
+│   ├── final
+│   │   ├── DataFlow_Deutsche_Borse.xml
+│   │   └── Dummy_DataFlow_Deutsche_Borse.xml
+│   └── supporting
+│       ├── 21472-convert-csv-to-json.xml
+│       ├── DataFlow_Deutsche_Borse\ copy.xml
+│       ├── DataFlow_Deutsche_Borse.xml
+│       ├── DataFlow_Deutsche_Borse_01062020.xml
+│       ├── Demonstracja_1_-_przenie?\233_pliki.xml
+│       ├── Demonstracja_2_-_modyfikacja_atrybutów_i_zawarto?\233ci.xml
+│       ├── Demonstracja_3_-_CSV_to_JSON.xml
+│       ├── Demonstracja_4_-_Transity.xml
+│       ├── Dummy_DataFlow_Deutsche_Borse.xml
+│       ├── Split_multiple_CSV.xml
+│       ├── sample_ingestion.xml
+│       └── transity-to-kafka.xml
+├── obrona.pptx
+├── praca_koncowa_final.doc
+├── project.yml
+└── project1.yml
