@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description>The flow of Deutsche Borse dummy data to Apache Kafka</description>
+    <groupId>810508dc-0172-1000-759e-c5de2f34567b</groupId>
+    <name>Dummy_DataFlow_Deutsche_Borse</name>
+    <snippet>
+        <processGroups>
+            <id>2ecefd16-2d84-3e84-0000-000000000000</id>
+            <parentGroupId>97bd457f-05f4-3e3a-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments>The flow of Deutsche Borse dummy data to Apache Kafka</comments>
+            <contents>
+                <connections>
+                    <id>115074ba-2bf8-3034-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>49ff8c60-5d92-3d29-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>9fea31df-0d66-3d65-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>2b50a0ca-8e61-35d7-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>2a5a23fc-a6c6-3a3b-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>ETN</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>b7e2d3f5-c841-36b9-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>348c21f2-4886-308c-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>518f5e43-7814-3251-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>unmatched</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>b7e2d3f5-c841-36b9-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>55683fd2-6a0f-339d-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>518f5e43-7814-3251-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>49ff8c60-5d92-3d29-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>563f59af-f066-3236-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>616f3ba9-4229-37af-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>split</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>49ff8c60-5d92-3d29-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>61a7e905-1611-35e8-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>94718199-ef2a-3a13-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>Common stock</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>b7e2d3f5-c841-36b9-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>6895809a-c358-3f36-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>00752bc4-a668-3795-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>ETC</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>b7e2d3f5-c841-36b9-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>89ba3fd7-71c4-30fe-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>a44c7d64-144e-32fb-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>ETF</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>b7e2d3f5-c841-36b9-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>a169817c-e282-34bb-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>9fea31df-0d66-3d65-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>c4b00c9f-0ff5-3c81-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>b95d419f-5300-3e4e-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>b7e2d3f5-c841-36b9-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>matched</selectedRelationships>
+                    <source>
+                        <groupId>2ecefd16-2d84-3e84-0000-000000000000</groupId>
+                        <id>616f3ba9-4229-37af-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <controllerServices>
+                    <id>5e337e3b-9ac3-36f0-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <bundle>
+                        <artifact>nifi-record-serialization-services-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <comments></comments>
+                    <descriptors>
+                        <entry>
+                            <key>schema-access-strategy</key>
+                            <value>
+<name>schema-access-strategy</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-registry</key>
+                            <value>
+<identifiesControllerService>org.apache.nifi.schemaregistry.services.SchemaRegistry</identifiesControllerService>
+<name>schema-registry</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-name</key>
+                            <value>
+<name>schema-name</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-version</key>
+                            <value>
+<name>schema-version</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-branch</key>
+                            <value>
+<name>schema-branch</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-text</key>
+                            <value>
+<name>schema-text</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>csv-reader-csv-parser</key>
+                            <value>
+<name>csv-reader-csv-parser</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Date Format</key>
+                            <value>
+<name>Date Format</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Time Format</key>
+                            <value>
+<name>Time Format</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Timestamp Format</key>
+                            <value>
+<name>Timestamp Format</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>CSV Format</key>
+                            <value>
+<name>CSV Format</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Value Separator</key>
+                            <value>
+<name>Value Separator</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Skip Header Line</key>
+                            <value>
+<name>Skip Header Line</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>ignore-csv-header</key>
+                            <value>
+<name>ignore-csv-header</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Quote Character</key>
+                            <value>
+<name>Quote Character</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Escape Character</key>
+                            <value>
+<name>Escape Character</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Comment Marker</key>
+                            <value>
+<name>Comment Marker</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Null String</key>
+                            <value>
+<name>Null String</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Trim Fields</key>
+                            <value>
+<name>Trim Fields</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>csvutils-character-set</key>
+                            <value>
+<name>csvutils-character-set</name>
+                            </value>
+                        </entry>
+                    </descriptors>
+                    <name>CSVReader</name>
+                    <persistsState>false</persistsState>
+                    <properties>
+                        <entry>
+                            <key>schema-access-strategy</key>
+                            <value>infer-schema</value>
+                        </entry>
+                        <entry>
+                            <key>schema-registry</key>
+                        </entry>
+                        <entry>
+                            <key>schema-name</key>
+                            <value>${schema.name}</value>
+                        </entry>
+                        <entry>
+                            <key>schema-version</key>
+                        </entry>
+                        <entry>
+                            <key>schema-branch</key>
+                        </entry>
+                        <entry>
+                            <key>schema-text</key>
+                            <value>${avro.schema}</value>
+                        </entry>
+                        <entry>
+                            <key>csv-reader-csv-parser</key>
+                            <value>commons-csv</value>
+                        </entry>
+                        <entry>
+                            <key>Date Format</key>
+                        </entry>
+                        <entry>
+                            <key>Time Format</key>
+                        </entry>
+                        <entry>
+                            <key>Timestamp Format</key>
+                        </entry>
+                        <entry>
+                            <key>CSV Format</key>
+                            <value>custom</value>
+                        </entry>
+                        <entry>
+                            <key>Value Separator</key>
+                            <value>,</value>
+                        </entry>
+                        <entry>
+                            <key>Skip Header Line</key>
+                            <value>true</value>
+                        </entry>
+                        <entry>
+                            <key>ignore-csv-header</key>
+                            <value>false</value>
+                        </entry>
+                        <entry>
+                            <key>Quote Character</key>
+                            <value>"</value>
+                        </entry>
+                        <entry>
+                            <key>Escape Character</key>
+                            <value>\</value>
+                        </entry>
+                        <entry>
+                            <key>Comment Marker</key>
+                        </entry>
+                        <entry>
+                            <key>Null String</key>
+                        </entry>
+                        <entry>
+                            <key>Trim Fields</key>
+                            <value>true</value>
+                        </entry>
+                        <entry>
+                            <key>csvutils-character-set</key>
+                            <value>UTF-8</value>
+                        </entry>
+                    </properties>
+                    <state>ENABLED</state>
+                    <type>org.apache.nifi.csv.CSVReader</type>
+                </controllerServices>
+                <controllerServices>
+                    <id>6960528c-5dfd-39d1-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <bundle>
+                        <artifact>nifi-record-serialization-services-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <comments></comments>
+                    <descriptors>
+                        <entry>
+                            <key>Schema Write Strategy</key>
+                            <value>
+<name>Schema Write Strategy</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-cache</key>
+                            <value>
+<identifiesControllerService>org.apache.nifi.serialization.RecordSchemaCacheService</identifiesControllerService>
+<name>schema-cache</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-access-strategy</key>
+                            <value>
+<name>schema-access-strategy</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-registry</key>
+                            <value>
+<identifiesControllerService>org.apache.nifi.schemaregistry.services.SchemaRegistry</identifiesControllerService>
+<name>schema-registry</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-name</key>
+                            <value>
+<name>schema-name</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-version</key>
+                            <value>
+<name>schema-version</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-branch</key>
+                            <value>
+<name>schema-branch</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>schema-text</key>
+                            <value>
+<name>schema-text</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Date Format</key>
+                            <value>
+<name>Date Format</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Time Format</key>
+                            <value>
+<name>Time Format</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Timestamp Format</key>
+                            <value>
+<name>Timestamp Format</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Pretty Print JSON</key>
+                            <value>
+<name>Pretty Print JSON</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>suppress-nulls</key>
+                            <value>
+<name>suppress-nulls</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>output-grouping</key>
+                            <value>
+<name>output-grouping</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>compression-format</key>
+                            <value>
+<name>compression-format</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>compression-level</key>
+                            <value>
+<name>compression-level</name>
+                            </value>
+                        </entry>
+                    </descriptors>
+                    <name>JsonRecordSetWriter</name>
+                    <persistsState>false</persistsState>
+                    <properties>
+                        <entry>
+                            <key>Schema Write Strategy</key>
+                            <value>no-schema</value>
+                        </entry>
+                        <entry>
+                            <key>schema-cache</key>
+                        </entry>
+                        <entry>
+                            <key>schema-access-strategy</key>
+                            <value>inherit-record-schema</value>
+                        </entry>
+                        <entry>
+                            <key>schema-registry</key>
+                        </entry>
+                        <entry>
+                            <key>schema-name</key>
+                            <value>${schema.name}</value>
+                        </entry>
+                        <entry>
+                            <key>schema-version</key>
+                        </entry>
+                        <entry>
+                            <key>schema-branch</key>
+                        </entry>
+                        <entry>
+                            <key>schema-text</key>
+                            <value>${avro.schema}</value>
+                        </entry>
+                        <entry>
+                            <key>Date Format</key>
+                        </entry>
+                        <entry>
+                            <key>Time Format</key>
+                        </entry>
+                        <entry>
+                            <key>Timestamp Format</key>
+                        </entry>
+                        <entry>
+                            <key>Pretty Print JSON</key>
+                            <value>false</value>
+                        </entry>
+                        <entry>
+                            <key>suppress-nulls</key>
+                            <value>never-suppress</value>
+                        </entry>
+                        <entry>
+                            <key>output-grouping</key>
+                            <value>output-array</value>
+                        </entry>
+                        <entry>
+                            <key>compression-format</key>
+                            <value>none</value>
+                        </entry>
+                        <entry>
+                            <key>compression-level</key>
+                            <value>1</value>
+                        </entry>
+                    </properties>
+                    <state>ENABLED</state>
+                    <type>org.apache.nifi.json.JsonRecordSetWriter</type>
+                </controllerServices>
+                <processors>
+                    <id>00752bc4-a668-3795-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1008.0</x>
+                        <y>1304.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-kafka-0-9-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>bootstrap.servers</key>
+<value>
+    <name>bootstrap.servers</name>
+</value>
+                            </entry>
+                            <entry>
+<key>security.protocol</key>
+<value>
+    <name>security.protocol</name>
+</value>
+                            </entry>
+                            <entry>
+<key>sasl.kerberos.service.name</key>
+<value>
+    <name>sasl.kerberos.service.name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ssl.context.service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>ssl.context.service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>topic</key>
+<value>
+    <name>topic</name>
+</value>
+                            </entry>
+                            <entry>
+<key>acks</key>
+<value>
+    <name>acks</name>
+</value>
+                            </entry>
+                            <entry>
+<key>kafka-key</key>
+<value>
+    <name>kafka-key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>key-attribute-encoding</key>
+<value>
+    <name>key-attribute-encoding</name>
+</value>
+                            </entry>
+                            <entry>
+<key>message-demarcator</key>
+<value>
+    <name>message-demarcator</name>
+</value>
+                            </entry>
+                            <entry>
+<key>max.request.size</key>
+<value>
+    <name>max.request.size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ack.wait.time</key>
+<value>
+    <name>ack.wait.time</name>
+</value>
+                            </entry>
+                            <entry>
+<key>max.block.ms</key>
+<value>
+    <name>max.block.ms</name>
+</value>
+                            </entry>
+                            <entry>
+<key>partitioner.class</key>
+<value>
+    <name>partitioner.class</name>
+</value>
+                            </entry>
+                            <entry>
+<key>compression.type</key>
+<value>
+    <name>compression.type</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>bootstrap.servers</key>
+<value>kafka-1:19091,kafka-2:29091,kafka-3:39091</value>
+                            </entry>
+                            <entry>
+<key>security.protocol</key>
+<value>PLAINTEXT</value>
+                            </entry>
+                            <entry>
+<key>sasl.kerberos.service.name</key>
+                            </entry>
+                            <entry>
+<key>ssl.context.service</key>
+                            </entry>
+                            <entry>
+<key>topic</key>
+<value>ETC</value>
+                            </entry>
+                            <entry>
+<key>acks</key>
+<value>0</value>
+                            </entry>
+                            <entry>
+<key>kafka-key</key>
+                            </entry>
+                            <entry>
+<key>key-attribute-encoding</key>
+<value>utf-8</value>
+                            </entry>
+                            <entry>
+<key>message-demarcator</key>
+                            </entry>
+                            <entry>
+<key>max.request.size</key>
+<value>1 MB</value>
+                            </entry>
+                            <entry>
+<key>ack.wait.time</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>max.block.ms</key>
+<value>5 sec</value>
+                            </entry>
+                            <entry>
+<key>partitioner.class</key>
+<value>org.apache.kafka.clients.producer.internals.DefaultPartitioner</value>
+                            </entry>
+                            <entry>
+<key>compression.type</key>
+<value>none</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PublishKafka</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.kafka.pubsub.PublishKafka</type>
+                </processors>
+                <processors>
+                    <id>2a5a23fc-a6c6-3a3b-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>552.0</x>
+                        <y>1304.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-kafka-0-9-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>bootstrap.servers</key>
+<value>
+    <name>bootstrap.servers</name>
+</value>
+                            </entry>
+                            <entry>
+<key>security.protocol</key>
+<value>
+    <name>security.protocol</name>
+</value>
+                            </entry>
+                            <entry>
+<key>sasl.kerberos.service.name</key>
+<value>
+    <name>sasl.kerberos.service.name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ssl.context.service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>ssl.context.service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>topic</key>
+<value>
+    <name>topic</name>
+</value>
+                            </entry>
+                            <entry>
+<key>acks</key>
+<value>
+    <name>acks</name>
+</value>
+                            </entry>
+                            <entry>
+<key>kafka-key</key>
+<value>
+    <name>kafka-key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>key-attribute-encoding</key>
+<value>
+    <name>key-attribute-encoding</name>
+</value>
+                            </entry>
+                            <entry>
+<key>message-demarcator</key>
+<value>
+    <name>message-demarcator</name>
+</value>
+                            </entry>
+                            <entry>
+<key>max.request.size</key>
+<value>
+    <name>max.request.size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ack.wait.time</key>
+<value>
+    <name>ack.wait.time</name>
+</value>
+                            </entry>
+                            <entry>
+<key>max.block.ms</key>
+<value>
+    <name>max.block.ms</name>
+</value>
+                            </entry>
+                            <entry>
+<key>partitioner.class</key>
+<value>
+    <name>partitioner.class</name>
+</value>
+                            </entry>
+                            <entry>
+<key>compression.type</key>
+<value>
+    <name>compression.type</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>bootstrap.servers</key>
+<value>kafka-1:19091,kafka-2:29091,kafka-3:39091</value>
+                            </entry>
+                            <entry>
+<key>security.protocol</key>
+<value>PLAINTEXT</value>
+                            </entry>
+                            <entry>
+<key>sasl.kerberos.service.name</key>
+                            </entry>
+                            <entry>
+<key>ssl.context.service</key>
+                            </entry>
+                            <entry>
+<key>topic</key>
+<value>ETN</value>
+                            </entry>
+                            <entry>
+<key>acks</key>
+<value>0</value>
+                            </entry>
+                            <entry>
+<key>kafka-key</key>
+                            </entry>
+                            <entry>
+<key>key-attribute-encoding</key>
+<value>utf-8</value>
+                            </entry>
+                            <entry>
+<key>message-demarcator</key>
+                            </entry>
+                            <entry>
+<key>max.request.size</key>
+<value>1 MB</value>
+                            </entry>
+                            <entry>
+<key>ack.wait.time</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>max.block.ms</key>
+<value>5 sec</value>
+                            </entry>
+                            <entry>
+<key>partitioner.class</key>
+<value>org.apache.kafka.clients.producer.internals.DefaultPartitioner</value>
+                            </entry>
+                            <entry>
+<key>compression.type</key>
+<value>none</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PublishKafka</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.kafka.pubsub.PublishKafka</type>
+                </processors>
+                <processors>
+                    <id>49ff8c60-5d92-3d29-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>304.0</x>
+                        <y>672.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>JsonPath Expression</key>
+<value>
+    <name>JsonPath Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Null Value Representation</key>
+<value>
+    <name>Null Value Representation</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>JsonPath Expression</key>
+<value>$</value>
+                            </entry>
+                            <entry>
+<key>Null Value Representation</key>
+<value>empty string</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>SplitJson</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>original</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>split</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.SplitJson</type>
+                </processors>
+                <processors>
+                    <id>518f5e43-7814-3251-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1000.0</x>
+                        <y>872.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-update-attribute-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Delete Attributes Expression</key>
+<value>
+    <name>Delete Attributes Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>
+    <name>Store State</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+<value>
+    <name>Stateful Variables Initial Value</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>
+    <name>canonical-value-lookup-cache-size</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Delete Attributes Expression</key>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>Do not store state</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>100</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>DummyProcessor</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>DISABLED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                </processors>
+                <processors>
+                    <id>616f3ba9-4229-37af-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>288.0</x>
+                        <y>872.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Destination</key>
+<value>
+    <name>Destination</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Return Type</key>
+<value>
+    <name>Return Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Path Not Found Behavior</key>
+<value>
+    <name>Path Not Found Behavior</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Null Value Representation</key>
+<value>
+    <name>Null Value Representation</name>
+</value>
+                            </entry>
+                            <entry>
+<key>key</key>
+<value>
+    <name>key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>time</key>
+<value>
+    <name>time</name>
+</value>
+                            </entry>
+                            <entry>
+<key>type</key>
+<value>
+    <name>type</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Destination</key>
+<value>flowfile-attribute</value>
+                            </entry>
+                            <entry>
+<key>Return Type</key>
+<value>auto-detect</value>
+                            </entry>
+                            <entry>
+<key>Path Not Found Behavior</key>
+<value>ignore</value>
+                            </entry>
+                            <entry>
+<key>Null Value Representation</key>
+<value>empty string</value>
+                            </entry>
+                            <entry>
+<key>key</key>
+<value>$.Mnemonic</value>
+                            </entry>
+                            <entry>
+<key>time</key>
+<value>$.Time</value>
+                            </entry>
+                            <entry>
+<key>type</key>
+<value>$.SecurityType</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>EvaluateJsonPath</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>matched</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>unmatched</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
+                </processors>
+                <processors>
+                    <id>94718199-ef2a-3a13-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-360.0</x>
+                        <y>1304.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-kafka-0-9-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>bootstrap.servers</key>
+<value>
+    <name>bootstrap.servers</name>
+</value>
+                            </entry>
+                            <entry>
+<key>security.protocol</key>
+<value>
+    <name>security.protocol</name>
+</value>
+                            </entry>
+                            <entry>
+<key>sasl.kerberos.service.name</key>
+<value>
+    <name>sasl.kerberos.service.name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ssl.context.service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>ssl.context.service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>topic</key>
+<value>
+    <name>topic</name>
+</value>
+                            </entry>
+                            <entry>
+<key>acks</key>
+<value>
+    <name>acks</name>
+</value>
+                            </entry>
+                            <entry>
+<key>kafka-key</key>
+<value>
+    <name>kafka-key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>key-attribute-encoding</key>
+<value>
+    <name>key-attribute-encoding</name>
+</value>
+                            </entry>
+                            <entry>
+<key>message-demarcator</key>
+<value>
+    <name>message-demarcator</name>
+</value>
+                            </entry>
+                            <entry>
+<key>max.request.size</key>
+<value>
+    <name>max.request.size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ack.wait.time</key>
+<value>
+    <name>ack.wait.time</name>
+</value>
+                            </entry>
+                            <entry>
+<key>max.block.ms</key>
+<value>
+    <name>max.block.ms</name>
+</value>
+                            </entry>
+                            <entry>
+<key>partitioner.class</key>
+<value>
+    <name>partitioner.class</name>
+</value>
+                            </entry>
+                            <entry>
+<key>compression.type</key>
+<value>
+    <name>compression.type</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>bootstrap.servers</key>
+<value>kafka-1:19091,kafka-2:29091,kafka-3:39091</value>
+                            </entry>
+                            <entry>
+<key>security.protocol</key>
+<value>PLAINTEXT</value>
+                            </entry>
+                            <entry>
+<key>sasl.kerberos.service.name</key>
+                            </entry>
+                            <entry>
+<key>ssl.context.service</key>
+                            </entry>
+                            <entry>
+<key>topic</key>
+<value>CommonStocks</value>
+                            </entry>
+                            <entry>
+<key>acks</key>
+<value>0</value>
+                            </entry>
+                            <entry>
+<key>kafka-key</key>
+                            </entry>
+                            <entry>
+<key>key-attribute-encoding</key>
+<value>utf-8</value>
+                            </entry>
+                            <entry>
+<key>message-demarcator</key>
+                            </entry>
+                            <entry>
+<key>max.request.size</key>
+<value>1 MB</value>
+                            </entry>
+                            <entry>
+<key>ack.wait.time</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>max.block.ms</key>
+<value>5 sec</value>
+                            </entry>
+                            <entry>
+<key>partitioner.class</key>
+<value>org.apache.kafka.clients.producer.internals.DefaultPartitioner</value>
+                            </entry>
+                            <entry>
+<key>compression.type</key>
+<value>none</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PublishKafka</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.kafka.pubsub.PublishKafka</type>
+                </processors>
+                <processors>
+                    <id>9fea31df-0d66-3d65-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>304.0</x>
+                        <y>488.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>record-reader</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+    <name>record-reader</name>
+</value>
+                            </entry>
+                            <entry>
+<key>record-writer</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.serialization.RecordSetWriterFactory</identifiesControllerService>
+    <name>record-writer</name>
+</value>
+                            </entry>
+                            <entry>
+<key>include-zero-record-flowfiles</key>
+<value>
+    <name>include-zero-record-flowfiles</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>record-reader</key>
+<value>5e337e3b-9ac3-36f0-0000-000000000000</value>
+                            </entry>
+                            <entry>
+<key>record-writer</key>
+<value>6960528c-5dfd-39d1-0000-000000000000</value>
+                            </entry>
+                            <entry>
+<key>include-zero-record-flowfiles</key>
+<value>false</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ConvertRecord</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.ConvertRecord</type>
+                </processors>
+                <processors>
+                    <id>a44c7d64-144e-32fb-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>96.0</x>
+                        <y>1304.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-kafka-0-9-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>bootstrap.servers</key>
+<value>
+    <name>bootstrap.servers</name>
+</value>
+                            </entry>
+                            <entry>
+<key>security.protocol</key>
+<value>
+    <name>security.protocol</name>
+</value>
+                            </entry>
+                            <entry>
+<key>sasl.kerberos.service.name</key>
+<value>
+    <name>sasl.kerberos.service.name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ssl.context.service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>ssl.context.service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>topic</key>
+<value>
+    <name>topic</name>
+</value>
+                            </entry>
+                            <entry>
+<key>acks</key>
+<value>
+    <name>acks</name>
+</value>
+                            </entry>
+                            <entry>
+<key>kafka-key</key>
+<value>
+    <name>kafka-key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>key-attribute-encoding</key>
+<value>
+    <name>key-attribute-encoding</name>
+</value>
+                            </entry>
+                            <entry>
+<key>message-demarcator</key>
+<value>
+    <name>message-demarcator</name>
+</value>
+                            </entry>
+                            <entry>
+<key>max.request.size</key>
+<value>
+    <name>max.request.size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ack.wait.time</key>
+<value>
+    <name>ack.wait.time</name>
+</value>
+                            </entry>
+                            <entry>
+<key>max.block.ms</key>
+<value>
+    <name>max.block.ms</name>
+</value>
+                            </entry>
+                            <entry>
+<key>partitioner.class</key>
+<value>
+    <name>partitioner.class</name>
+</value>
+                            </entry>
+                            <entry>
+<key>compression.type</key>
+<value>
+    <name>compression.type</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>bootstrap.servers</key>
+<value>kafka-1:19091,kafka-2:29091,kafka-3:39091</value>
+                            </entry>
+                            <entry>
+<key>security.protocol</key>
+<value>PLAINTEXT</value>
+                            </entry>
+                            <entry>
+<key>sasl.kerberos.service.name</key>
+                            </entry>
+                            <entry>
+<key>ssl.context.service</key>
+                            </entry>
+                            <entry>
+<key>topic</key>
+<value>ETF</value>
+                            </entry>
+                            <entry>
+<key>acks</key>
+<value>0</value>
+                            </entry>
+                            <entry>
+<key>kafka-key</key>
+                            </entry>
+                            <entry>
+<key>key-attribute-encoding</key>
+<value>utf-8</value>
+                            </entry>
+                            <entry>
+<key>message-demarcator</key>
+                            </entry>
+                            <entry>
+<key>max.request.size</key>
+<value>1 MB</value>
+                            </entry>
+                            <entry>
+<key>ack.wait.time</key>
+<value>5 secs</value>
+                            </entry>
+                            <entry>
+<key>max.block.ms</key>
+<value>5 sec</value>
+                            </entry>
+                            <entry>
+<key>partitioner.class</key>
+<value>org.apache.kafka.clients.producer.internals.DefaultPartitioner</value>
+                            </entry>
+                            <entry>
+<key>compression.type</key>
+<value>none</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PublishKafka</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.kafka.pubsub.PublishKafka</type>
+                </processors>
+                <processors>
+                    <id>b7e2d3f5-c841-36b9-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>288.0</x>
+                        <y>1080.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Routing Strategy</key>
+<value>
+    <name>Routing Strategy</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Common stock</key>
+<value>
+    <name>Common stock</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ETC</key>
+<value>
+    <name>ETC</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ETF</key>
+<value>
+    <name>ETF</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ETN</key>
+<value>
+    <name>ETN</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Routing Strategy</key>
+<value>Route to Property name</value>
+                            </entry>
+                            <entry>
+<key>Common stock</key>
+<value>${type:equals('Common stock')}</value>
+                            </entry>
+                            <entry>
+<key>ETC</key>
+<value>${type:equals('ETC')}</value>
+                            </entry>
+                            <entry>
+<key>ETF</key>
+<value>${type:equals('ETF')}</value>
+                            </entry>
+                            <entry>
+<key>ETN</key>
+<value>${type:equals('ETN')}</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>10 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>RouteOnAttribute</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>Common stock</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>ETC</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>ETF</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>ETN</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>unmatched</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+                </processors>
+                <processors>
+                    <id>c4b00c9f-0ff5-3c81-0000-000000000000</id>
+                    <parentGroupId>2ecefd16-2d84-3e84-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-368.0</x>
+                        <y>488.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.11.4</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>File Size</key>
+<value>
+    <name>File Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>
+    <name>Batch Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>
+    <name>Data Format</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>
+    <name>Unique FlowFiles</name>
+</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>
+    <name>generate-ff-custom-text</name>
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>
+    <name>character-set</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>File Size</key>
+<value>0B</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>Text</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+DE000BAY0017,BAYN,BAYER AG NA O.N.,Common stock,EUR,2504664,2020-06-05,09:44,63.71,63.73,63.69,63.71,4114,27
+DE0008404005,ALV,ALLIANZ SE NA O.N.,Common stock,EUR,2505133,2020-06-05,09:44,190.14,190.2,189.96,189.96,2648,29
+DE0005190003,BMW,BAY.MOTOREN WERKE AG ST,Common stock,EUR,2504900,2020-06-05,09:44,60.01,60.05,60,60,3248,28
+DE000A1ML7J1,VNA,VONOVIA SE NA O.N.,Common stock,EUR,2504501,2020-06-05,09:44,55.08,55.1,55.08,55.1,1586,11
+IE00BKM4GZ66,IS3N,IS C.MSCI EMIMI U.ETF DLA,ETF,EUR,2505427,2020-06-05,09:44,23.93,23.93,23.92,23.92,1159,2
+DE0006599905,MRK,MERCK KGAA O.N.,Common stock,EUR,2505050,2020-06-05,09:44,103.95,104,103.9,104,554,6
+DE0007100000,DAI,DAIMLER AG NA O.N.,Common stock,EUR,2505076,2020-06-05,09:44,39.015,39.04,38.975,38.98,10759,25
+NL0012169213,QIA,"QIAGEN NV         EO -,01",Common stock,EUR,2506272,2020-06-05,09:44,39.02,39.03,39.02,39.03,1065,3
+DE0005190037,BMW3,BAY.MOTOREN WERKE  VZO,Common stock,EUR,2504901,2020-06-05,09:44,45.98,45.98,45.94,45.98,519,6
+DE000ETFL235,EL4X,DK DAXPLUS MAX.DIVIDEND,ETF,EUR,2504260,2020-06-05,09:44,55.83,55.84,55.83,55.84,1680,2
+DE0006095003,CAP,ENCAVIS AG  INH. O.N.,Common stock,EUR,2505012,2020-06-05,09:44,12.26,12.26,12.26,12.26,1196,1
+DE000ETFL060,EL4F,DK DAX (AUSSCHUETTEND),ETF,EUR,2504259,2020-06-05,09:44,56.04,56.08,56.04,56.08,530,2
+DE0007500001,TKA,THYSSENKRUPP AG O.N.,Common stock,EUR,2505105,2020-06-05,09:44,7.176,7.18,7.166,7.166,18278,28
+DE000A0Q4R02,EXH9,ISH.S.EU.600 UTI.U.ETF A.,ETF,EUR,2504392,2020-06-05,09:44,34.715,34.715,34.715,34.715,75,1
+DE0006632003,MOR,MORPHOSYS AG O.N.,Common stock,EUR,2505055,2020-06-05,09:44,113.05,113.05,112.9,112.9,772,5
+IE00BHZPJ452,EDMJ,ISHSIV-M.JPN ESC ENH.DLA,ETF,EUR,4004430,2020-06-05,09:44,4.7395,4.7405,4.7395,4.7405,287,2
+IE00B4L5YX21,EUNN,ISHSIII-C.MSCI JP.IMI DLA,ETF,EUR,2505655,2020-06-05,09:44,37.471,37.471,37.471,37.471,16,1
+DE0007664039,VOW3,VOLKSWAGEN AG VZO O.N.,Common stock,EUR,2505114,2020-06-05,09:44,147.94,148.02,147.74,147.78,4260,47
+DE0005933931,EXS1,ISHS CORE DAX UCITS ETF,ETF,EUR,2504265,2020-06-05,09:44,107.74,107.74,107.68,107.68,514,4
+DE0005552004,DPW,DEUTSCHE POST AG NA O.N.,Common stock,EUR,2504953,2020-06-05,09:44,31.06,31.06,31.05,31.05,1879,9
+DE0006231004,IFX,INFINEON TECH.AG NA O.N.,Common stock,EUR,2505024,2020-06-05,09:44,20.745,20.75,20.72,20.72,9432,10
+DE0005664809,EVT,EVOTEC SE  INH O.N.,Common stock,EUR,2504963,2020-06-05,09:44,23.92,23.92,23.92,23.92,303,1
+DE0007164600,SAP,SAP SE O.N.,Common stock,EUR,2505077,2020-06-05,09:44,119.02,119.02,118.76,118.76,13330,90
+DE000KGX8881,KGX,KION GROUP AG,Common stock,EUR,2504811,2020-06-05,09:44,55.5,55.58,55.5,55.58,1828,24
+DE0006047004,HEI,HEIDELBERGCEMENT AG O.N.,Common stock,EUR,2505002,2020-06-05,09:44,51.52,51.54,51.48,51.48,4290,23
+DE0005439004,CON,CONTINENTAL AG O.N.,Common stock,EUR,2504933,2020-06-05,09:44,95.2,95.3,95.14,95.2,2442,16
+DE000ETFL037,EL4C,DK STOXX EUR.STR.GROW.20,ETF,EUR,2504683,2020-06-05,09:44,45.82,45.82,45.815,45.815,183,2
+LU1673108939,AT1,"AROUNDTOWN EO-,01",Common stock,EUR,2653294,2020-06-05,09:44,5.94,5.94,5.934,5.934,6981,13
+DE000A1DAHH0,BNR,BRENNTAG AG NA O.N.,Common stock,EUR,2504453,2020-06-05,09:44,49.15,49.16,49.13,49.13,265,5
+DE0005158703,BC8,BECHTLE AG O.N.,Common stock,EUR,2504894,2020-06-05,09:44,153.2,153.2,153.2,153.2,371,10
+IE00B53L3W79,SXRT,ISHSVII-C.EO STXX50 EOACC,ETF,EUR,2506397,2020-06-05,09:44,108.78,108.78,108.78,108.78,10,1
+DE0008232125,LHA,LUFTHANSA AG VNA O.N.,Common stock,EUR,2505130,2020-06-05,09:44,10.97,10.995,10.935,10.94,58277,48
+GB00B03MLX29,R6C,ROYAL DUTCH SHELL A EO-07,Common stock,EUR,2505360,2020-06-05,09:44,16.276,16.276,16.268,16.268,2500,2
+DE0005200000,BEI,BEIERSDORF AG O.N.,Common stock,EUR,2504906,2020-06-05,09:44,98.74,98.8,98.74,98.8,232,8
+DE000A2E4K43,DHER,DELIVERY HERO SE NA O.N.,Common stock,EUR,2518798,2020-06-05,09:44,84.98,84.98,84.8,84.88,1486,21
+DE000PAH0038,PAH3,PORSCHE AUTOM.HLDG VZO,Common stock,EUR,2504816,2020-06-05,09:44,54.3,54.32,54.2,54.2,3006,29
+DE0007257503,CEC,CECONOMY AG  ST O.N.,Common stock,EUR,2505090,2020-06-05,09:44,3.446,3.478,3.446,3.476,62442,36
+DE000A0TGJ55,VAR1,VARTA AG O.N.,Common stock,EUR,2721826,2020-06-05,09:44,94.6,94.7,94.55,94.55,1189,13
+IE00B6R52036,IS0E,ISV-GOLD.PROD.U.ETF DLA,ETF,EUR,2505739,2020-06-05,09:44,12.49,12.49,12.49,12.49,20,1
+IE00BD1F4M44,QDVI,ISHSIV-E.MSCI USA VAL.FA.,ETF,EUR,2505410,2020-06-05,09:44,5.695,5.696,5.695,5.696,843,2
+DE000ENAG999,EOAN,E.ON SE NA O.N.,Common stock,EUR,2504666,2020-06-05,09:44,10.065,10.07,10.065,10.07,1375,2
+IE00BGPP6697,IBB1,ISHSII-DLT.BD7-10YR EODH,ETF,EUR,3878664,2020-06-05,09:44,5.5722,5.5722,5.5722,5.5722,7023,2
+US0970231058,BCO,BOEING CO.           DL 5,Common stock,EUR,2506450,2020-06-05,09:44,169.46,169.46,169.42,169.42,80,3
+DE000SHL1006,SHL,SIEMENS HEALTH.AG NA O.N.,Common stock,EUR,3058562,2020-06-05,09:44,44.69,44.69,44.685,44.685,245,3
+DE0006450000,LPK,LPKF LASER+ELECTRON.,Common stock,EUR,2505039,2020-06-05,09:44,21.6,21.6,21.6,21.6,1500,2
+DE000A0HN5C6,DWNI,DEUTSCHE WOHNEN SE INH,Common stock,EUR,2504314,2020-06-05,09:44,42.91,42.95,42.9,42.94,2485,12
+IE00BZ12WP82,LIN,"LINDE PLC        EO 0,001",Common stock,EUR,3553182,2020-06-05,09:44,190.5,190.5,190.45,190.5,1069,11
+DE000A0S9GB0,4GLD,DT.BOERSE COM. XETRA-GOLD,ETC,EUR,2506202,2020-06-05,09:44,48.468,48.468,48.45,48.45,6297,4
+IE00BM67HK77,XDWH,X(IE)-MSCI WO.HE.CA. 1CDL,ETF,EUR,2505453,2020-06-05,09:44,34.115,34.115,34.115,34.115,200,1
+DE000A1PHFF7,BOSS,HUGO BOSS AG NA O.N.,Common stock,EUR,2504512,2020-06-05,09:44,29.1,29.16,29.1,29.16,698,2
+US5007541064,KHNZ,"KRAFT HEINZ CO.DL -,01",Common stock,EUR,2506520,2020-06-05,09:44,27.97,27.97,27.97,27.97,200,1
+NL0000235190,AIR,AIRBUS,Common stock,EUR,2506257,2020-06-05,09:44,75.71,75.71,75.6,75.61,1176,14
+DE0006070006,HOT,HOCHTIEF AG,Common stock,EUR,2505009,2020-06-05,09:44,88.25,88.25,88.2,88.2,147,3
+DE000LEG1110,LEG,LEG IMMOBILIEN AG NA O.N.,Common stock,EUR,2504814,2020-06-05,09:44,118.5,118.5,118.5,118.5,86,1
+DE000EVNK013,EVK,EVONIK INDUSTRIES NA O.N.,Common stock,EUR,2504806,2020-06-05,09:44,24.63,24.63,24.62,24.62,426,3
+LU0274211480,DBXD,XTR.DAX 1C,ETF,EUR,2504269,2020-06-05,09:44,121.38,121.38,121.38,121.38,50,1
+US70450Y1038,2PP,"PAYPAL HDGS INC.DL-,0001",Common stock,EUR,2506551,2020-06-05,09:44,137.64,137.64,137.64,137.64,35,1
+DE0005557508,DTE,DT.TELEKOM AG NA,Common stock,EUR,2504954,2020-06-05,09:44,15.14,15.14,15.13,15.13,29246,17
+DE000BASF111,BAS,BASF SE NA O.N.,Common stock,EUR,2504663,2020-06-05,09:44,56.53,56.55,56.5,56.5,4470,26
+DE0007236101,SIE,SIEMENS AG  NA O.N.,Common stock,EUR,2505088,2020-06-05,09:44,106.36,106.4,106.36,106.36,4906,19
+DE0005933923,EXS3,ISHARES MDAX UCITS ETF,ETF,EUR,2504988,2020-06-05,09:44,227.65,227.65,227.65,227.65,8,1
+DE0005785604,FRE,FRESENIUS SE+CO.KGAA O.N.,Common stock,EUR,2504973,2020-06-05,09:44,44.38,44.4,44.36,44.36,2911,8
+IE00BFNM3D14,SLMC,ISHSIV-MSCI EUR.ESG S.EOA,ETF,EUR,3546661,2020-06-05,09:44,5.387,5.387,5.387,5.387,67,2
+CH0038389992,BBZA,"BB BIOTECH NAM.   SF 0,20",Common stock,EUR,2504244,2020-06-05,09:44,64.3,64.3,64.3,64.3,30,1
+DE0005140008,DBK,DEUTSCHE BANK AG NA O.N.,Common stock,EUR,2504888,2020-06-05,09:44,8.497,8.504,8.488,8.489,12822,22
+US0231351067,AMZ,"AMAZON.COM INC.    DL-,01",Common stock,EUR,2506427,2020-06-05,09:44,2175.5,2175.5,2175.5,2175.5,53,2
+DE0007037129,RWE,RWE AG   INH O.N.,Common stock,EUR,2505072,2020-06-05,09:44,30.77,30.79,30.76,30.77,27721,52
+ES0113900J37,BSD2,"BCO SANTANDER N.EO0,5",Common stock,EUR,2505145,2020-06-05,09:44,2.4025,2.4025,2.4025,2.4025,500,1
+GB00B03MM408,R6C3,ROYAL DUTCH SHELL B EO-07,Common stock,EUR,2505361,2020-06-05,09:44,15.476,15.48,15.476,15.48,420,4
+DE0006062144,1COV,COVESTRO AG  O.N.,Common stock,EUR,2505008,2020-06-05,09:44,37.04,37.05,37.04,37.04,1537,7
+US3453708600,FMC1,"FORD MOTOR         DL-,01",Common stock,EUR,2506489,2020-06-05,09:44,5.968,5.968,5.968,5.968,1581,1
+DE000TUAG000,TUI1,TUI AG NA O.N.,Common stock,EUR,2504855,2020-06-05,09:44,5.56,5.56,5.552,5.552,2500,4
+IE00B44Z5B48,SPYY,SPDR MSCI ACWI UCITS ETF,ETF,EUR,2505678,2020-06-05,09:44,122.56,122.56,122.56,122.56,275,1
+DE0007568578,F3C,SFC ENERGY AG,Common stock,EUR,2505109,2020-06-05,09:44,12.28,12.28,12.28,12.28,14,1
+DE000KBX1006,KBX,KNORR-BREMSE AG  INH O.N.,Common stock,EUR,3502744,2020-06-05,09:44,100.86,100.86,100.86,100.86,127,1
+DE0006452907,NEM,NEMETSCHEK SE O.N.,Common stock,EUR,2505040,2020-06-05,09:44,65.8,65.8,65.8,65.8,254,4
+DE000A1EWWW0,ADS,ADIDAS AG NA O.N.,Common stock,EUR,2504471,2020-06-05,09:44,260.7,260.7,260.5,260.5,438,11
+FR0010424143,LSK8,LYX.EURO ST.50D.(-2X)I. A,ETF,EUR,2506386,2020-06-05,09:44,2.871,2.871,2.871,2.871,3465,1
+DE0008019001,PBB,DT.PFANDBRIEFBK AG,Common stock,EUR,2505126,2020-06-05,09:44,7.53,7.53,7.52,7.52,3833,7
+DE000A2BDEB6,4RT6,WITR COM.SEC.DZ08/UN.IDX,ETC,EUR,2506304,2020-06-05,09:44,2.87,2.87,2.87,2.87,402,2
+DE000A0LD6E6,GXI,GERRESHEIMER AG,Common stock,EUR,2504380,2020-06-05,09:44,78.05,78.05,78.05,78.05,70,1
+DE000A0D6554,NDX1,NORDEX SE O.N.,Common stock,EUR,2504290,2020-06-05,09:44,10.07,10.07,10.04,10.04,11500,5
+DE000A0DJ6J9,S92,SMA SOLAR TECHNOL.AG,Common stock,EUR,2504287,2020-06-05,09:44,29.54,29.54,29.46,29.46,373,4
+IE00BYX8XD24,IS31,ISHSVI-E.S+P500MIN.V.EOHA,ETF,EUR,2541719,2020-06-05,09:44,6.507,6.507,6.507,6.507,384,2
+DE0005810055,DB1,DEUTSCHE BOERSE NA O.N.,Common stock,EUR,2504978,2020-06-05,09:44,154.2,154.2,154.15,154.15,511,12
+DE0007030009,RHM,RHEINMETALL AG,Common stock,EUR,2505071,2020-06-05,09:44,78.96,79.2,78.94,79.2,388,10
+DE0008430026,MUV2,MUENCH.RUECKVERS.VNA O.N.,Common stock,EUR,2505134,2020-06-05,09:44,239.2,239.2,239.2,239.2,75,1
+DE0005773303,FRA,FRAPORT AG FFM.AIRPORT,Common stock,EUR,2504970,2020-06-05,09:44,48.72,48.74,48.72,48.74,349,3
+IE00BYTBXV33,RY4C,"RYANAIR HLDGS PLC EO-,006",Common stock,EUR,2505535,2020-06-05,09:44,12.765,12.765,12.74,12.74,201,2
+IE00B1TXHL60,IQQL,ISHSII-LIST.PRIV.EQ.DLDIS,ETF,EUR,2505594,2020-06-05,09:44,18.042,18.07,18.042,18.07,32930,6
+DE0005909006,GBF,BILFINGER SE O.N.,Common stock,EUR,2504986,2020-06-05,09:44,19.02,19.03,18.92,18.92,434,3
+DE000A0SMU87,NB2,NORTHERN DATA AG INH O.N.,Common stock,EUR,3487567,2020-06-05,09:44,56.4,56.4,55.8,55.8,156,2
+IE00BWBXM948,ZPDT,SPDR S+P US TECH.S.S.UETF,ETF,EUR,2505511,2020-06-05,09:44,44.825,44.825,44.825,44.825,30,1
+DE000A0H08M3,EXH1,IS.S.E.600 OIL+G.U.ETF A.,ETF,EUR,2504330,2020-06-05,09:44,23.955,23.955,23.955,23.955,785,2
+DE000A1TNWJ4,MPCK,MPC MUENCH.PET.CAP.,Common stock,EUR,2504521,2020-06-05,09:44,1.28,1.28,1.28,1.28,1043,1
+IE00BYXG2H39,2B70,ISIV-NASDAQ US BIOTE. DLA,ETF,EUR,2811271,2020-06-05,09:44,5.21,5.21,5.21,5.21,700,2
+DE000WCH8881,WCH,WACKER CHEMIE        O.N.,Common stock,EUR,2504860,2020-06-05,09:44,63.06,63.14,63,63.14,495,5
+DE000A2GS5D8,DMP,DERMAPHARM HLDG INH O.N.,Common stock,EUR,2984169,2020-06-05,09:44,44.58,44.58,44.58,44.58,52,2
+DE0006048432,HEN3,HENKEL AG+CO.KGAA VZO,Common stock,EUR,2505004,2020-06-05,09:44,85.98,85.98,85.98,85.98,470,4
+DE0005111702,ZO1,ZOOPLUS AG,Common stock,EUR,2504885,2020-06-05,09:44,144.4,144.6,144.2,144.6,317,5
+DE0007472060,WDI,WIRECARD AG,Common stock,EUR,2505101,2020-06-05,09:44,95.31,95.37,95.16,95.16,7177,42
+GB00BH4HKS39,VODI,VODAFONE GROUP PLC,Common stock,EUR,2505354,2020-06-05,09:44,1.5428,1.5428,1.5428,1.5428,9000,1
+IE00BM67HM91,XDW0,X(IE)-MSCI WO.ENERGY 1CDL,ETF,EUR,2505455,2020-06-05,09:44,20.285,20.285,20.285,20.285,24,1
+FR0010208488,GZF,ENGIE S.A. INH.      EO 1,Common stock,EUR,2505202,2020-06-05,09:44,11.705,11.705,11.705,11.705,850,1
+IE00BHZPJ908,EDMU,ISHSIV-M.USA ESC ENH.DLA,ETF,EUR,4004433,2020-06-05,09:44,4.9615,4.9615,4.9615,4.9615,298,1
+DE000A0Q4R36,EXV4,IS.S.E.600 HEA.C.U.ETF A.,ETF,EUR,2504394,2020-06-05,09:44,91.1,91.1,91.1,91.1,384,1
+DE000CBK1001,CBK,COMMERZBANK AG,Common stock,EUR,2504665,2020-06-05,09:44,4.23,4.23,4.224,4.224,15767,11
+DE000SYM9999,SY1,SYMRISE AG INH. O.N.,Common stock,EUR,2504852,2020-06-05,09:44,95.96,96.12,95.94,96,1402,17
+IE00BHZPJ783,EDM6,ISHSIV-M.EUR.ESC ENH.EOA,ETF,EUR,4004432,2020-06-05,09:44,4.975,4.975,4.975,4.975,539,1
+DE000A2YN900,TMV,TEAMVIEWER AG  INH O.N.,Common stock,EUR,4427656,2020-06-05,09:44,44.525,44.525,44.485,44.525,614,7
+DE0007165631,SRT3,SARTORIUS AG VZO O.N.,Common stock,EUR,2505079,2020-06-05,09:44,303.4,303.4,303.2,303.2,187,5
+CA98421R1055,4XT,XPHYTO THERAPEUTICS,Common stock,EUR,5276885,2020-06-05,09:44,2.1,2.1,2.1,2.1,1500,1
+LU0411078636,DBPK,XTR.S+P500 2XINV.D.SW. 1C,ETF,EUR,2505939,2020-06-05,09:44,0.9133,0.9133,0.9132,0.9132,3000,2
+US3682872078,GAZ,GAZPROM ADR SP./2 RL 5L 5,Common stock,EUR,2506491,2020-06-05,09:44,5.156,5.156,5.15,5.15,7816,4
+DE000A13SX22,HLE,HELLA GMBH+CO. KGAA O.N.,Common stock,EUR,2504580,2020-06-05,09:44,39.3,39.32,39.3,39.32,176,2
+IE00BYYHSM20,QDVX,ISHSII-MSCI EU.QUA.DV.EOD,ETF,EUR,2549088,2020-06-05,09:44,4.387,4.387,4.387,4.387,59,1
+DE0005137004,QSC,QSC AG NA O.N.,Common stock,EUR,2504887,2020-06-05,09:44,1.34,1.34,1.34,1.34,5000,6
+BE0974293251,1NBA,ANHEUSER-BUSCH INBEV,Common stock,EUR,2504195,2020-06-05,09:44,50.45,50.45,50.45,50.45,40,1
+AT0000A0E9W5,SANT,S+T AG (Z.REG.MK.Z.)O.N.,Common stock,EUR,2504159,2020-06-05,09:44,23.84,23.84,23.82,23.82,1279,2
+DE0005408116,ARL,AAREAL BANK AG,Common stock,EUR,2504927,2020-06-05,09:44,19.3,19.3,19.3,19.3,887,5
+US1912161007,CCC3,"COCA-COLA CO.      DL-,25",Common stock,EUR,2506461,2020-06-05,09:44,42.895,42.895,42.895,42.895,2,1
+DE0006602006,G1A,GEA GROUP AG,Common stock,EUR,2505051,2020-06-05,09:44,29.61,29.61,29.61,29.61,724,5
+DE0005419105,COK,CANCOM SE O.N.,Common stock,EUR,2504930,2020-06-05,09:44,53.85,53.85,53.85,53.85,400,2
+LU0061462528,RRTL,RTL GROUP,Common stock,EUR,2505811,2020-06-05,09:44,34.42,34.42,34.42,34.42,80,1
+DE000WAF3001,WAF,SILTRONIC AG NA O.N.,Common stock,EUR,2504859,2020-06-05,09:44,95.64,95.64,95.64,95.64,40,1
+DE0005157101,HNL,DR. HOENLE AG O.N.,Common stock,EUR,2504893,2020-06-05,09:44,48.3,48.3,48.3,48.3,96,1
+DE0005313704,AFX,CARL ZEISS MEDITEC AG,Common stock,EUR,2504922,2020-06-05,09:44,91.1,91.1,91.1,91.1,71,1
+LU0629459743,UIMM,UBS-ETF-MSCI WLD.S.R.DLAD,ETF,EUR,2506031,2020-06-05,09:44,90.71,90.71,90.71,90.71,10,1
+DE0005933956,EXW1,ISH.CORE EO STOX.50 U.ETF,ETF,EUR,2506383,2020-06-05,09:44,33.65,33.65,33.65,33.65,1120,2
+US83088V1026,8S0,SLACK TECHNOLOGIES CL.A,Common stock,EUR,4878445,2020-06-05,09:44,29.5,29.5,29.5,29.5,20,1
+DE0008402215,HNR1,HANNOVER RUECK SE NA O.N.,Common stock,EUR,2505132,2020-06-05,09:44,164.3,164.3,164.3,164.3,50,1
+GB0059822006,DLG,"DIALOG SEMICOND.   LS-,10",Common stock,EUR,2505387,2020-06-05,09:44,38.7,38.71,38.69,38.69,377,5
+DE0007461006,TPE,PVA TEPLA AG O.N.,Common stock,EUR,2505100,2020-06-05,09:44,11.54,11.54,11.54,11.54,1420,4
+DE0005545503,DRI,1+1 DRILLISCH AG O.N.,Common stock,EUR,2504950,2020-06-05,09:44,25.02,25.04,25.02,25.04,626,5
+DE000DWS1007,DWS,DWS GROUP GMBH+CO.KGAA ON,Common stock,EUR,3089123,2020-06-05,09:44,34,34,34,34,90,1
+DE000A2GS401,SOW,SOFTWARE AG  NA O.N.,Common stock,EUR,2696229,2020-06-05,09:44,34.1,34.1,34.04,34.06,917,8
+DE0005470306,EVD,CTS EVENTIM KGAA,Common stock,EUR,2504934,2020-06-05,09:44,44.58,44.6,44.54,44.54,1994,10
+IE00B4L5Y983,EUNL,ISHSIII-CORE MSCI WLD DLA,ETF,EUR,2505656,2020-06-05,09:44,53.364,53.364,53.364,53.364,420,1
+DE000A0D9PT0,MTX,MTU AERO ENGINES NA O.N.,Common stock,EUR,2504297,2020-06-05,09:44,171.1,171.1,171.1,171.1,50,1
+DE000ZAL1111,ZAL,ZALANDO SE,Common stock,EUR,2504863,2020-06-05,09:44,63.7,63.74,63.7,63.74,387,5
+DE000A0Z2ZZ5,FNTN,FREENET AG NA O.N.,Common stock,EUR,2504438,2020-06-05,09:44,15.825,15.825,15.81,15.81,759,6
+DE000UNSE018,UN01,UNIPER SE  NA O.N.,Common stock,EUR,2504856,2020-06-05,09:44,28.32,28.32,28.32,28.32,847,2
+US69343P1057,LUK,"LUKOIL SP.ADR     RL-,025",Common stock,EUR,2506550,2020-06-05,09:44,70.2,70.2,70.2,70.2,65,1
+DE000A1MMEV4,GSJ,GERM.STARTUPS GRP NA O.N.,Common stock,EUR,2504505,2020-06-05,09:44,1.43,1.43,1.43,1.43,1332,1
+LU1681043599,AMEW,AIS-AM.MSCI WLD EOC,ETF,EUR,3127771,2020-06-05,09:44,294.58,294.58,294.58,294.58,2,1
+US00206R1023,SOBA,AT + T INC.          DL 1,Common stock,EUR,2506414,2020-06-05,09:44,28.43,28.46,28.43,28.46,3332,2
+DE000A0S8488,HHFA,HAMBURG.HAFEN LOG.A-SP NA,Common stock,EUR,2504409,2020-06-05,09:44,17.24,17.28,17.24,17.28,1136,6
+NL0011821202,INN1,"ING GROEP NV      EO -,01",Common stock,EUR,2506270,2020-06-05,09:44,6.899,6.899,6.899,6.899,563,1
+DE0006969603,PUM,PUMA SE,Common stock,EUR,2505067,2020-06-05,09:44,70.88,70.88,70.88,70.88,162,2
+DE000A1E0HS6,XAD6,XTR P SILVER EUR 60,ETC,EUR,2506214,2020-06-05,09:44,149.25,149.25,149.24,149.24,700,2
+FR0000120271,TOTB,"TOTAL S.A.      EO 2,50",Common stock,EUR,2505166,2020-06-05,09:44,37.435,37.435,37.435,37.435,30,1
+DE0005008007,ADL,ADLER REAL ESTATE AG,Common stock,EUR,2504874,2020-06-05,09:44,13.28,13.3,13.28,13.3,2691,4
+US9497461015,NWT,"WELLS FARGO + CO.DL 1,666",Common stock,EUR,2506598,2020-06-05,09:44,27.435,27.435,27.435,27.435,150,1
+GB0005405286,HBC1,"HSBC HLDGS PLC     DL-,50",Common stock,EUR,2505374,2020-06-05,09:44,4.576,4.576,4.576,4.576,600,1
+DE0007480204,DEQ,DEUTSCHE EUROSHOP NA O.N.,Common stock,EUR,2505102,2020-06-05,09:44,15.29,15.29,15.29,15.29,717,2
+GB0031215220,POH1,"CARNIVAL PLC      DL 1,66",Common stock,EUR,4622061,2020-06-05,09:44,14.975,14.975,14.975,14.975,1500,1
+IE00B6R52259,IUSQ,ISHSV-MSCI ACWI DL A,ETF,EUR,2505741,2020-06-05,09:44,46.035,46.035,46.035,46.035,430,1
+DE000A1H8BV3,NOEJ,NORMA GROUP SE NA O.N.,Common stock,EUR,2504474,2020-06-05,09:44,28.98,29.06,28.98,29.06,95,2
+IE00BTJRMP35,XMME,X(IE)-MSCI EM.MKTS 1CDL,ETF,EUR,2511295,2020-06-05,09:44,41.725,41.725,41.724,41.724,425,2
+IE00BJ0KDR00,XD9U,X(IE) - MSCI USA 1C,ETF,EUR,2505425,2020-06-05,09:44,76.55,76.55,76.548,76.548,300,2
+DE0005089031,UTDI,UTD.INTERNET AG NA,Common stock,EUR,2504878,2020-06-05,09:44,37.99,38.01,37.98,37.98,1236,11
+DE000SHA0159,SHA,SCHAEFFLER AG INH. VZO,Common stock,EUR,2504849,2020-06-05,09:44,7.445,7.445,7.445,7.445,63,1
+DE000A0JKHC9,N7G,NANOGATE SE  INH. O.N.,Common stock,EUR,2504339,2020-06-05,09:44,5,5,5,5,31,1
+DE0005772206,FIE,FIELMANN AG O.N.,Common stock,EUR,2504969,2020-06-05,09:44,64.7,64.7,64.7,64.7,156,3
+US02079K3059,ABEA,"ALPHABET INC.CL.A DL-,001",Common stock,EUR,2506424,2020-06-05,09:44,1257.4,1257.4,1257.4,1257.4,5,1
+DE000A0Z23Q5,ADN1,ADESSO SE  INH O.N.,Common stock,EUR,2504440,2020-06-05,09:44,59.6,59.6,59.6,59.6,10,1
+DE000BFB0019,B4B,METRO AG   ST O.N.,Common stock,EUR,2532386,2020-06-05,09:44,9.168,9.17,9.168,9.17,808,3
+GB0007980591,BPE5,"BP PLC             DL-,25",Common stock,EUR,2505380,2020-06-05,09:44,3.9515,3.9515,3.9515,3.9515,900,1
+US5949181045,MSF,"MICROSOFT    DL-,00000625",Common stock,EUR,2506530,2020-06-05,09:44,162.32,162.32,162.32,162.32,30,1
+IE00BHZPJ239,EDM2,ISHSIV-M.EM ESC ENH.DLA,ETF,EUR,4511214,2020-06-05,09:44,4.33,4.33,4.33,4.33,544,1
+DE0005408884,LEO,LEONI AG NA O.N.,Common stock,EUR,2504929,2020-06-05,09:44,8.495,8.495,8.48,8.48,1000,3
+NL0012044747,SAE,SHOP APOTHEKE EUROPE INH.,Common stock,EUR,2506271,2020-06-05,09:44,87.8,87.8,87.8,87.8,20,1
+DE000PAT1AG3,PAT,PATRIZIA AG NA ON,Common stock,EUR,2504817,2020-06-05,09:44,22.65,22.65,22.65,22.65,371,1
+DE0006766504,NDA,AURUBIS AG,Common stock,EUR,2505060,2020-06-05,09:44,55.44,55.44,55.44,55.44,270,1
+GB00BF1GH114,M8H,MBH CORP. PLC     EO 1,Common stock,EUR,3623597,2020-06-05,09:44,0.422,0.422,0.422,0.422,404,1
+DE0005937031,MAN3,MAN SE VZO O.N.,Common stock,EUR,2504996,2020-06-05,09:44,46,46,46,46,100,1
+IE00B3VVMM84,VFEM,VANGUARD FTSE EMU.ETF DLD,ETF,EUR,2749248,2020-06-05,09:44,48.03,48.03,48.03,48.03,125,1
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>60 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>240 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>GenerateFlowFile</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+                </processors>
+            </contents>
+            <name>Dummy_DataFlow_Deutsche_Borse</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>06/07/2020 12:38:28 UTC</timestamp>
+</template>
